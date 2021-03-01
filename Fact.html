@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>B Sainath</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        let ans=()=>{
+            var n=parseInt(document.getElementById("num").value);
+            var ans=1;
+            for(let i=1;i<=n;i++)
+            ans=ans*i;
+            document.getElementById("fact").value=ans;
+        }
+        function calc(){
+            ans();
+        }
+    </script>
+  </head>
+  <body>
+    <div class="header">
+        <div class="header-logo">Sainath</div>
+    </div>
+    Enter a number <input id='num' type='text'><br><br><hr>
+    Factorial<span>     </span><input id='fact' type='text'><br><br>
+    <button onclick="calc()" width=50%>Find</button>
+  </body>
+</html>
